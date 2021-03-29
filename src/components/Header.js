@@ -1,8 +1,10 @@
 import brain_500 from "../images/brain_500.png";
 import icon_sun from "../images/icon_sun.svg";
 import Date from "./TodaysDate.js";
+import {darkMode} from "./DarkMode.js";
 
-const header = () => {
+
+const Header = () => {
   return (
     <div>
       <header
@@ -27,9 +29,12 @@ const header = () => {
             Brain Tab
           </h1>
         </div>
-        <button style={{ borderRadius: "100%", padding: "5px"}}>
+        <button
+          onClick={darkMode}
+          style={{ width: "52px", height: "52px", borderRadius: "100%", padding: "5px" }}
+        >
           <img
-            style={{ width: "40px", color: "#000", padding: "5px" }}
+            style={{ color: "#000", padding: "5px" }}
             src={icon_sun}
             alt=""
           />
@@ -40,4 +45,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;

@@ -1,13 +1,16 @@
 import Header from "./components/Header.js";
 import Windows from "./components/Windows.js";
+import Timer from "./components/Timer.js";
+
 import "./App.css";
 
 function App() {
   return (
-    <body >
+    <div >
       <Header />
       <Windows />
-    </body>
+      <Timer />
+    </div>
   );
 }
 

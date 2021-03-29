@@ -10,6 +10,11 @@ body {
   margin-left: 4%;
   background-color: cornflowerblue;
 }
+.dark-mode {
+  background-color: #24283c;
+  color: white;
+  filter: invert(1); /* PROBABLY DON'T WANT THIS */
+}
 button {
   cursor: pointer; 
 }
